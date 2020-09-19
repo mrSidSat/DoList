@@ -26,12 +26,12 @@ main{
     
 }
 #list{
-    display: inline-flex;
+    
     border:2px solid yellow;
     height:85%;
     width:95%;
     border-radius: 10px;
-    margin:0px;
+    margin-left:20px;
     padding:0px;
     
 }
@@ -48,7 +48,7 @@ main{
 #input>label{
    
     height:50%;
-    width: 15%;
+    width: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,5 +66,27 @@ main{
 }
 .input:focus{
     box-shadow: 5px 5px 10px black;
+}
+.tasks_{
+    padding:0px;
+    margin:0px;
+  
+    border:2px solid white;
+    width:100%;
+    text-align: left;
+    
+}
+.task_div{
+    padding:0px;
+    width:100%;
+    border:2px solid black;
+    color:white;
+}
+#submit{
+    border:2px solid blue;
+    height:40px ;
+    width:80px;
+    margin-left:10px;
+    
 }
 

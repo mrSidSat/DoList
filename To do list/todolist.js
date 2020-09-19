@@ -1,25 +1,39 @@
 var list = document.getElementById('list');
+var __task;
 
 
-
-function  Task (a)  {
-   this.date = new Date().toString();
-    this.creatediv = ()=>{
-    let div  = document.createElement("div");
-    var divsty = div.style;
-    divsty.height = "50px";
-    divsty.width = "100%";
-    divsty.color = "white";
-    divsty.border = "2px solid white"
-    console.log(divsty)
-
+function  Task (task)  {
+    console.log(task)
+    this.date = new Date().toString().split(' ');
+    var div  = document.createElement("div");
     var p = document.createElement("p");
-    p.innerHTML = this.date;
-    console.log(p);
-    div.appendChild(p);
-    console.log(div)
-    list.appendChild(div);
+   
+       
+    
+            div.classList.add('task_div')
+            console.log(this.date)
+            var p = document.createElement("p");
+            
+            p.innerHTML =  this.date[0] + "," + this.date[1] + " " + this.date[2] + " " + this.date[3] + "<br>" + this.date[4] + "<br>" + task;
+            
+            div.appendChild(p);
+            
+            p.classList.add('tasks_');
+            
+           
+           
+        
+            list.appendChild(div);
     }
+     
+
+function handelsubmit(){
+    console.log()
+    console.log(__task)
+    Task(__task);
 }
-var zap = new Task('a');
-console.log(zap.creatediv());
+function varry(e){
+    __task = e;
+    console.log(e);
+}
+

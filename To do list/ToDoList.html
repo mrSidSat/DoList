@@ -12,7 +12,9 @@
        </section>
        <section id="input">
            <label for="task"><span>Task</span></label>
-           <input type="text" class="input" name="task"/>
+           <input type="text" class="input" id="input_" onfocus="this.value = ' '" onblur="varry(this.value)" name="task"/>
+           <input type="submit" id="submit"   onclick="handelsubmit()" />
+           
        </section>  
    </main>
    <footer>
